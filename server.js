@@ -88,7 +88,7 @@ app.post('/login', (req, res) => {
                 res.status(400).send("User already in use");
             } else {
                 // If the user does not exist, hash the password and create a new user
-                bcrypt.hash(password, 12, (err, hashedPassword) => {
+                bcrypt.hash(password, 13, (err, hashedPassword) => {
                     if (err) {
                         res.status(500).send("Error hashing password");
                         return;
