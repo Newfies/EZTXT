@@ -1,0 +1,114 @@
+/* Root is where im storing variables. This is for things like fonts, colors, etc. */
+/* Use the fonts by setting the value to var(--VARIABLE) */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap');
+
+:root {
+    /* Night Mode Themed Colors */
+    --NM1: #1A1A1A;
+    --NM2: #242424;
+    --NM3: #2E2E2E;
+    --NM4: #383838;
+    --NM5: #444444;
+    --NM6: #5C5C5C;
+    --NM7: #787878;
+}
+
+* {
+    user-select: none;
+    cursor: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFDF0;
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.site {
+    display: block;
+}
+
+#indexlogo {
+    display: block;
+    /* width: 40%;
+    height: 35%; */
+    width: 20%;
+    height: 17.5%;
+    margin: 0 auto;
+}
+
+#motto {
+    display: block;
+    text-align: center;
+    font-size: large;
+}
+
+.formdata {
+    display: block;
+}
+
+.formdata input {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    padding: 1.5% 2%;
+    background-color: #EFF3EA;
+    border-radius: 6px;
+    font-size: large;
+    outline: none;
+    border: 2px solid #e26904;
+    transition: 0.2s ease-out;
+}
+
+.formdata input:hover {
+    background-color: #D9DFC6;
+    transition: 0.2s ease-in;
+}
+
+.formdata input:focus {
+    border: 2px solid rgb(256, 135, 34);
+    transition: 0.2s ease-in;
+}
+
+.formdata input:last-child {
+    display: block;
+    margin-top: 1%;
+}
+
+.formbutton {
+    display: block;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.formbutton input {
+    display: inline-block;
+    width: 17.5%;
+    padding: 1.5% 2%;
+    background-color: #EFF3EA;
+    border-radius: 6px;
+    font-size: large;
+    outline: none;
+    border: 2px solid #e26904;
+    transition: 0.2s ease-out;
+}
+
+.formbutton input:hover {
+    background-color: #D9DFC6;
+    transition: 0.2s ease-in;
+} 
+
+.formbutton input:focus {
+    border: 2px solid rgb(256, 135, 34);
+    transition: 0.2s ease-in;
+}
+
+footer {
+    display: block;
+    margin-top: 1%;
+    text-align: center
+}
